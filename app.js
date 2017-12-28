@@ -198,12 +198,6 @@ d3.select('#text-input').on('keydown', function() {
 }); // text input listener/handler
 
 
-
-
-// new -----------------------------------------------------
-
-
-
 d3.select('.mainCanvas').on('mousemove', function() {
 
   // draw the hiddenCanvas
