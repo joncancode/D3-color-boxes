@@ -1,16 +1,56 @@
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boxes in D3</title>
+	<meta charset="utf-8">
+	<title>d3 and canvas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<script src="http://d3js.org/d3.v4.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+	<style type="text/css">
+		
+		body {
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		canvas {
+			border:  1px dotted #ccc;
+		}
+		
+		#text-explain {
+			display: inline-block;
+			font-size: 0.75em;
+			margin-bottom: 1em;
+		}
+
+		.alert {
+			color: tomato;
+		}
+
+		div#tooltip {
+		  position: absolute;        
+			display: inline-block;
+			padding: 10px;
+			font-family: 'Open Sans' sans-serif;
+			color: #000;
+		  background-color: #fff;
+			border: 1px solid rgb(153, 153, 153);
+			border-radius: 2px;
+		  pointer-events: none;
+			opacity: 0;
+			z-index: 1;
+		}
+	</style>
+	
 </head>
 <body>
-    <h2>Boxes in D3</h3>
-    <!-- input number of numbers -->
-    <input type="text" id="text-input" value="100">
-    <div id="text-explain">how many boxes?</div>
-    <div id="container"></div>
-    <src="app.js"></src>
+
+	<h3>Color Boxes</h3>
+	<input type="text" id="text-input" value="9999">
+	<div id="text-explain">choose a number</div>
+	<div id="container"></div>
+
+	<div id="tooltip"></div>	
+<script src="app.js"></script>
 </body>
 </html>
